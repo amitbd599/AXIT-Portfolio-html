@@ -38,7 +38,7 @@
 1. Typography
 ----------------------------------------------------------------*/
 :root {
-  --theme-color: #fec544;
+  --theme-color: #2ff093;
 }
 
 body,
@@ -138,7 +138,6 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
-
   body,
   html {
     font-size: 14px;
@@ -320,9 +319,6 @@ a:hover {
   .axit__height-b210 {
     height: 210px;
   }
-
-
-
 }
 
 @media screen and (max-width: 991px) {
@@ -689,15 +685,15 @@ hr {
     flex-wrap: wrap;
   }
 
-  .axit__nav .axit__nav-list>li {
+  .axit__nav .axit__nav-list > li {
     margin-right: 40px;
   }
 
-  .axit__nav .axit__nav-list>li:last-child {
+  .axit__nav .axit__nav-list > li:last-child {
     margin-right: 0px;
   }
 
-  .axit__nav .axit__nav-list>li>a {
+  .axit__nav .axit__nav-list > li > a {
     padding: 15px 0;
     font-size: 15px;
     display: inline-block;
@@ -708,7 +704,7 @@ hr {
     position: relative;
   }
 
-  .axit__nav .axit__nav-list>li>a::after {
+  .axit__nav .axit__nav-list > li > a::after {
     position: absolute;
     content: "";
     left: 0;
@@ -719,11 +715,11 @@ hr {
     transition: all 0.3s linear;
   }
 
-  .axit__nav .axit__nav-list>li>a.active {
+  .axit__nav .axit__nav-list > li > a.active {
     color: var(--theme-color);
   }
 
-  .axit__nav .axit__nav-list>li>a.active::after {
+  .axit__nav .axit__nav-list > li > a.active::after {
     width: 70%;
   }
 
@@ -914,9 +910,6 @@ hr {
     -webkit-transition-delay: 0s, 0.2s;
     transition-delay: 0s, 0.2s;
   }
-
-
-
 }
 
 .axit__sticky-header {
@@ -966,11 +959,11 @@ hr {
     flex-direction: column;
   }
 
-  .axit__site-header.axit__style2 .axit__nav .axit__nav-list>li {
+  .axit__site-header.axit__style2 .axit__nav .axit__nav-list > li {
     margin-right: 0;
   }
 
-  .axit__site-header.axit__style2 .axit__nav .axit__nav-list>li>a {
+  .axit__site-header.axit__style2 .axit__nav .axit__nav-list > li > a {
     padding: 10px 0;
   }
 
@@ -1041,7 +1034,6 @@ hr {
 }
 
 @media screen and (max-width: 991px) {
-
   .axit__site-header .axit__btn,
   .axit__site-header.axit__style2 .axit__opening-hr,
   .axit__site-header.axit__style2 .axit__social-btn.axit__style1 {
@@ -1146,10 +1138,10 @@ hr {
 }
 
 .axit__hero.axit__style1 .axit__hero-text h3 {
-  font-size: 30px;
+  font-size: 26px;
   margin-top: -6px;
   margin-bottom: 10px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--theme-color);
 }
 
@@ -1188,7 +1180,7 @@ hr {
     .axit__icon-name {
       color: var(--theme-color);
     }
-      i {
+    i {
       color: var(--theme-color);
     }
   }
@@ -1478,9 +1470,11 @@ canvas {
 }
 
 .bubble:after {
-  background: radial-gradient(ellipse at center,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
   border-radius: 50%;
   -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
@@ -1500,12 +1494,7 @@ canvas {
 @media screen and (min-width: 992px) {
   .axit__hero.axit__style1 .axit__hero-text h1 {
     font-size: 78px;
-
-
-
   }
-
-
 }
 
 @media screen and (max-width: 991px) {
@@ -1642,7 +1631,6 @@ canvas {
 }
 
 @media screen and (max-width: 991px) {
-
   .axit__btn.axit__style1,
   .axit__btn.axit__style2 {
     font-size: 14px;
@@ -1863,7 +1851,6 @@ canvas {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 
-
   .counter__wrapper {
     h2 {
       font-size: 42px;
@@ -2058,7 +2045,7 @@ canvas {
 }
 
 .axit__portfolio-item-hover {
-  background: #0A101E;
+  background: #0a101e;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -2204,15 +2191,15 @@ canvas {
   padding-right: 15px;
 }
 
-.axit__slider.axit__style1 .slick-slide>div,
-.axit__slider.axit__style2 .slick-slide>div {
+.axit__slider.axit__style1 .slick-slide > div,
+.axit__slider.axit__style2 .slick-slide > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.axit__slider.axit__style1 .slick-slide>div>.slick-slide-in,
-.axit__slider.axit__style2 .slick-slide>div>.slick-slide-in {
+.axit__slider.axit__style1 .slick-slide > div > .slick-slide-in,
+.axit__slider.axit__style2 .slick-slide > div > .slick-slide-in {
   width: 100%;
 }
 
@@ -2515,7 +2502,7 @@ canvas {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.axit__page-heading>div {
+.axit__page-heading > div {
   position: relative;
   z-index: 1;
 }
@@ -2742,17 +2729,17 @@ canvas {
   margin-bottom: 15px;
 }
 
-.axit__post-label>span {
+.axit__post-label > span {
   display: inline-block;
   position: relative;
 }
 
-.axit__post-label>span:not(:last-child) {
+.axit__post-label > span:not(:last-child) {
   padding-right: 15px;
   margin-right: 15px;
 }
 
-.axit__post-label>span:not(:last-child):before {
+.axit__post-label > span:not(:last-child):before {
   content: "";
   position: absolute;
   height: 16px;
@@ -2865,11 +2852,11 @@ canvas {
   margin-top: 6px;
 }
 
-.axit__page-heading-in .axit__post-label>span:not(:last-child):before {
+.axit__page-heading-in .axit__post-label > span:not(:last-child):before {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.axit__page-heading-in .axit__post-label>span:not(:last-child) {
+.axit__page-heading-in .axit__post-label > span:not(:last-child) {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -2949,7 +2936,7 @@ canvas {
 
 .comment-body {
   position: relative;
-    margin-left: 120px;
+  margin-left: 120px;
   margin-bottom: 25px;
   min-height: 50px;
 }
@@ -2968,7 +2955,7 @@ canvas {
   width: 100px;
   position: absolute;
   top: 0;
-    left: -120px;
+  left: -120px;
   border-radius: 6px;
 }
 
@@ -2983,7 +2970,6 @@ canvas {
   font-size: 14px;
   display: block;
 }
-
 
 .comment-author .nm a:hover,
 .comment-author .nm:hover,
@@ -3027,11 +3013,11 @@ canvas {
 }
 
 .children .comment-body {
-    margin-left: 160px;
+  margin-left: 160px;
 }
 
 .children .comment-author .avatar {
-    left: -120px;
+  left: -120px;
 }
 
 .comment-respond {
@@ -3116,7 +3102,7 @@ canvas {
   align-items: center;
 }
 
-.post-navigation>div {
+.post-navigation > div {
   display: inline-block;
 }
 
@@ -3426,8 +3412,6 @@ canvas {
 }
 
 .shape {
-
-
   .shape__child-1 {
     position: absolute;
     right: -180px;
@@ -3469,6 +3453,4 @@ canvas {
     padding: 100px;
     transform: rotate(150deg);
   }
-
-
 }
