@@ -37,7 +37,6 @@
     revelImageAnimation();
     sectionSlideUp();
     sectionSlideDown();
-    boxitem_slideup();
   });
 
   $(window).on("scroll", function () {
@@ -77,6 +76,20 @@
     $(".axit__munu-dropdown-toggle").on("click", function () {
       $(this).toggleClass("active").siblings("ul").slideToggle();
     });
+
+    $(".axit__nav-list li a").on("click", function () {
+      // Check if the viewport width is at least 991 pixels
+      if (window.innerWidth <= 991) {
+        // Check if the navigation list is currently visible
+        if ($(".axit__nav-list").is(":visible")) {
+          // Remove active class and hide the navigation list
+          $(".axit__munu-toggle").removeClass("axit__toggle-active");
+          $(".axit__nav-list").slideUp();
+        }
+      }
+    });
+
+
   }
 
   /*--------------------------------------------------------------
@@ -732,15 +745,5 @@
     });
   }
 
-  // Start Box Item Animation // boxitembowns
-  function boxitem_slideup() {
-    $(document).ready(function () {
-      TweenMax.to(".boxitembowns", 2, {
-        y: 275,
-        repeat: -1,
-        repeatDelay: 0.5,
-        ease: Bounce.easeOut,
-      });
-    });
-  }
+
 })(jQuery); // End of use strict

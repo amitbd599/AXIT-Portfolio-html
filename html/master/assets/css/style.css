@@ -1,6 +1,6 @@
 /**
  Theme Name: XIT
- Author: Laralink
+ Author: themesoft69
  Version: 1.0.0
  */
 /*Google Fonts*/
@@ -895,22 +895,21 @@ hr {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.axit__hero-wrap .axit__hero-img {
-  position: absolute;
-  right: 4%;
-  top: 0;
+.axit__hero-wrap .hero__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
   height: 100%;
-  width: 45%;
-  z-index: 11;
 }
+
 .axit__hero.axit__style1 {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1258,6 +1257,16 @@ canvas {
     font-size: 78px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .axit__hero-wrap .axit__hero-img {
+    display: none;
+  }
+  .axit__hero.axit__style1{
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .axit__hero-wrap {
     height: initial;
@@ -1269,6 +1278,9 @@ canvas {
     padding: 100px 0;
   }
 }
+
+
+
 @media screen and (max-width: 767px) {
   .axit__hero.axit__style2 h1 {
     font-size: 40px;
@@ -1281,11 +1293,12 @@ canvas {
   }
 }
 @media screen and (max-width: 575px) {
-  .axit__hero.axit__style1 {
-    height: 580px;
-  }
+
   .axit__hero.axit__style1 .axit__hero-text h1 {
-    font-size: 90px;
+    font-size: 70px;
+  }
+  .axit__about-img {
+    min-height: 480px;
   }
 }
 /*--------------------------------------------------------------
@@ -1433,13 +1446,22 @@ canvas {
   .axit__section-heading.axit__style1 .axit__section-heading-subtitle {
     display: none;
   }
+  .axit__hero-wrap .hero__inner{
+    display: block;
+  }
 }
 /* End Section Heading */
 /*--------------------------------------------------------------
  9. About Section
  ----------------------------------------------------------------*/
 .axit__about-img {
-  min-height: 550px;
+  min-height: 610px;
+}
+
+@media screen and (max-width: 575px) {
+  .axit__about-img {
+    min-height: 480px;
+  }
 }
 .axit__about-img-wrap {
   padding-right: 30px;
@@ -2500,7 +2522,6 @@ canvas {
 }
 .comments-area {
   padding-top: 56px;
-  border-top: 1px solid #232935;
 }
 .comment-body {
   position: relative;
